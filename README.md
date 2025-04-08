@@ -131,8 +131,14 @@ To simulate a phishing attack targeting users with a fake Netflix login page to 
 
 - Security Awareness Insight: At a **33%** success rate, this campaign showed that **1 in 3** users in my test organization fell for the phishing scam. This sets a bad precedent for this fictional organization as threat actors only need **ONE WEAK LINK**.
 
+## 💡 Lessons Learned
+- SMTP authentication can fail due to 2FA – resolved by generating app-specific passwords.
+- DNS and SMTP reputation matter for email deliverability.
+- Realism in landing pages and email content increases engagement.
+- Local hosting (Laragon) is efficient for testing campaigns offline.
 
-## ✅ Lessons Learned / Recommendations
+
+## ✅ Recommendations
 - Educate users on verifying sender addresses and spotting red flags in suspicious emails.
 - Encourage use of multi-factor authentication (MFA) to reduce impact even if credentials are phished.
 - Simulate regular phishing tests to improve awareness and build a security-conscious culture.
