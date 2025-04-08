@@ -17,7 +17,8 @@ To simulate a phishing attack targeting users with a fake Netflix login page to 
 - Date of Campaign Launch: 04/08/2025
 - Duration: Results monitored over 3 days
 - Fake landing page hosted locally/on the network: Using Laragon and VSCode
-- Picture: Image 1.1 - Gophish Campaign Launch Page
+- Picture:
+![Gophish Campaign Launch Page](images/Screenshot(40).png)
 
 ### 🧪 Project Steps/Methodology
 
