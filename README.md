@@ -17,8 +17,9 @@ To simulate a phishing attack targeting users with a fake Netflix login page to 
 - Date of Campaign Launch: 04/08/2025
 - Duration: Results monitored over 3 days
 - Fake landing page hosted locally/on the network: Using Laragon and VSCode
-- Picture:
-![Gophish Campaign Launch Page](images/Screenshot(40).png)
+- Picture: Gophish Campaign Created
+
+![Gophish Campaign Launch Page](images/gophish-campaign-dashboard.png)
 
 ### 🧪 Project Steps/Methodology
 
@@ -61,14 +62,13 @@ To simulate a phishing attack targeting users with a fake Netflix login page to 
 
 ---
 
-## Artifacts
+## Artefacts
 
 ## 📧 Email Template Details
 - Subject Line: Your Netflix Account Requires Verification
 - Sender Name: Netflix Security Team
 - Sender Email: support@netflix.com (spoofed)
 - Email Content Summary: This is a security alert notifying the user of a suspicious login attempt and urging them to verify their account to avoid suspension. The email contains a call-to-action link redirecting to the phishing landing page.
-- Picture: Image 2.1 - Email Template
 
 ## 🌐 Landing Page Details
 - Landing Page Title: Netflix Login Page
@@ -78,27 +78,59 @@ To simulate a phishing attack targeting users with a fake Netflix login page to 
     - If the user attempts to log in, capture.php captures the user's login credentials
     - Capture.php saves credentials to log.txt
     - The user gets redirected to a friendly awareness page (phish-success.html) which informs the user that they've fallen for a test phishing simulation.
-- Picture:
-    - Image 3.1 - Fake login page
-    - Image 3.2 - Friendly awareness page
-    - Image 3.3 - Capture.php file showing code used to capture the user's credentials
-    - Image 3.4 - Log.txt file showing captured user's credentials
+- Pictures:
+    - Image - Fake login page
+    
+    ![Landing Page](images/landing-page.png)
+
+    
+    - Image - Page redirects after user logs in
+    
+    ![Phish Success](images/phish-success.png)
+
+    
+    - Image - Capture.php file showing code used to capture the user's credentials
+
+    ![Capture.php file](images/php-code-to-capture-user-cred.png)
+
+
+    - Image - Log.txt file showing captured user's credentials
+
+    ![User credentials captured](images/user-credentials-captured.png)
+
 
 ## 👥 Target Group(s)
 - User Group Name: "Test Users"
 - Number of Recipients: 3
 - Delivery Method: SMTP via Zoho Mail
-- Picture: Image 4.1 - Zoho Mail Admin Dashboard showing admin profile and test users
+- Picture: Zoho Mail Admin Dashboard showing admin profile and test users
+
+![Test Users created in Mail service](images/test-users-created-in-mail-service.png)
 
 ## 📊 Results & Metrics
 - Emails Sent: 3
+- Picture: Emails sent from Admin's Sending Profile
+
+![Mails sent](images/mails-sent.png)
+
 - Emails Opened: 3
+
+- Picture: Email opened in target's inbox
+
+![Mail opened](images/mail-opened.png)
+
 - Emails reported as Spam: 2
+
 - Link Clicks: 2
+
 - Credentials Submitted: 1
+
 - Unique Users Phished: 1 (33%)
-- Bounce/Failed Deliveries - Hehehe funny story. I didn't set **MX, SPF, DKIM, and DMARC** records for my mail service provider when I first launched the campaign, so all the emails got dropped i.e. they didn't make it into the inbox of the targets. I did some troubleshooting and research before I realized that was the issue and then fixed it and relaunched the campaign, this time, there were no bounces or failed deliveries
+
+- Bounce/Failed Deliveries - Hehehe, funny story. I didn't set **MX, SPF, DKIM, and DMARC** records for my mail service provider when I first launched the campaign, so all the emails got dropped i.e. they didn't make it into the inbox of the targets. I did some troubleshooting and research before I realized that was the issue and then fixed it and relaunched the campaign, this time, there were no bounces or failed deliveries
+
 - Security Awareness Insight: At a **33%** success rate, this campaign showed that **1 in 3** users in my test organization fell for the phishing scam. This sets a bad precedent for this fictional organization as threat actors only need **ONE WEAK LINK**.
+
 
 ## ✅ Lessons Learned / Recommendations
 - Educate users on verifying sender addresses and spotting red flags in suspicious emails.
@@ -106,20 +138,23 @@ To simulate a phishing attack targeting users with a fake Netflix login page to 
 - Simulate regular phishing tests to improve awareness and build a security-conscious culture.
 - Implement secure email gateways with phishing protection rules.
 
---
+---
 
 ## 📂 Supporting Artifacts
 Screenshots of:
 Email template in inbox
-Landing page
-Submitted credential logs (log.txt)
-Gophish campaign dashboard
-Copy of email template (HTML)
-Landing page source files (HTML, PHP)
 
-👤 Prepared By
-Name: Francis Tochukwu Uramah
-Role: Cybersecurity Analyst
-Date: April 2025
+![Email in inbox](images/mail-opened.png)
 
-*Ref 1: Network Diagram*
+Gophish campaign dashboard showing Mail sent
+
+![Mails sent](images/gophish-campaign-mail-sent.png)
+
+---
+
+## 👤 Prepared By
+- Name: Francis Tochukwu Uramah
+- Role: Cybersecurity Analyst
+- Date: April 2025
+
+Thank you for reading!
